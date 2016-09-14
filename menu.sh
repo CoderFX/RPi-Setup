@@ -1,4 +1,7 @@
 #!/bin/bash
+
+#<TBD> = To Be Done / To Be Developed
+
 function nocase()
 {
   if [ "`echo $1 | tr [:lower:] [:upper:]`" = "`echo $2 | tr [:lower:] [:upper:]`" ]
@@ -21,7 +24,7 @@ do
   echo -e '4: Create passwordless SSH connection'
   echo -e '5: Create Wifi access point (requires 2 wifi adapters)'
   echo -e '6: Create Ad-hoc wifi network'
-  echo -e '7: Create Ad-hoc wifi network'
+  echo -e '7: Change SSH port from 22 to something like 45678' https://tryapi.wordpress.com/2013/07/09/tips-when-using-raspberry-pi-as-ssh-proxy/
   echo -e '8: Create Ad-hoc bluetooth network (for SSH connection)'
   echo -e '9: Add option to SSH via USB'
   echo -e '10: Add VPN settings, so RPi always connects to home LAN network if possible'
@@ -30,8 +33,10 @@ do
   echo -e '13: Setup backups for RPi to NAS'
   echo -e '14: Setup Alexa (might be complicated)'
   echo -e '15: Install important applications'
-  echo -e '16: >Python (for GPIO)''
+  echo -e '16: >Python (for GPIO)'
   echo -e '17: >Nginx'
+  echo -e '18: Install additional security settings' 
+  echo -e '999: Disable root login from SSH (CAREFUL IF YOU WANT TO INSTALL SOMETHING LATER - ONLY SCREEN+KEYBOARD WILL WORK)' 
     echo -e 'S: Show Network config '
   echo -e 'I: IP Address '
   echo -e 'C: Change Network config'
@@ -73,10 +78,29 @@ do
   
   #4: Create passwordless SSH connection, so only logins with SSH keys work <TBD>
   #Guide: https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md
-  elif nocase "$opt" "3"
+  elif nocase "$opt" "4"
   then
     sudo ./passwordless-ssh.sh
-  
+    
+  #5: Create Wifi access point (requires 2 wifi adapters)
+  elif nocase "$opt" "4"
+  then
+    sudo ./wifi-ap.sh
+    
+  #18: Install additional security settings
+  # Check reports:
+  # awk '($(NF-1) = /Ban/){print $NF}' /var/log/fail2ban.log | sort | uniq -c | sort -n
+  # zgrep -h "Ban " /var/log/fail2ban.log* | awk '{print $NF}' | sort | uniq -c
+  elif nocase "$opt" "18"
+  then
+    sudo sudo apt-get install fail2ban -y
+    
+  #999: Install additional security settings
+  elif nocase "$opt" "999"
+  then
+    sudo nano /etc/ssh/sshd_config
+    <find line and change it to "PermitRootLogin no"> <TBD>
+    
   elif nocase "$opt" "Q"
   then
     exit=TRUE
