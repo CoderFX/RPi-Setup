@@ -95,7 +95,7 @@ do
   then
     sudo sudo apt-get install fail2ban -y
     
-  #999: Install additional security settings
+  #999: Disable root login from SSH (CAREFUL IF YOU WANT TO INSTALL SOMETHING LATER - ONLY SCREEN+KEYBOARD WILL WORK)
   elif nocase "$opt" "999"
   then
     sudo nano /etc/ssh/sshd_config
