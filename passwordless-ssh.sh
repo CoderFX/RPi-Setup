@@ -7,7 +7,9 @@ sudo nano /etc/ssh/sshd_config
 #Change "UsePAM yes" to "UsePAM no" - This will disable password authentication (PAM)
 <command to find correct line and change it> <TBD>
 
-#change "ChallengeResponseAuthentication yes" to "ChallengeResponseAuthentication no"
+#Disable challenge-response authentication
+#Change "ChallengeResponseAuthentication yes" to "ChallengeResponseAuthentication no"
+<command to find correct line and change it> <TBD>
 
 #Restart sshd
 sudo service restart sshd
