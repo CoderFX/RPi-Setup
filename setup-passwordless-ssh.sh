@@ -1,4 +1,6 @@
 #!/bin/bash
+#4: Create passwordless SSH connection, so only logins with SSH keys work <TBD>
+#Guide: https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md
 
 sudo nano /etc/ssh/sshd_config
 #Uncomment and change PasswordAuthentication to no
