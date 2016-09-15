@@ -9,6 +9,9 @@ Automate everything!!!
 
 #Getting ready:
 
+1. Prepare RPi sd card with PiBaker to at least let you ssh into your Pi from home network
+
+2. Run code:
 sudo apt-get update -y && sudo apt-get dist-upgrade -y && sudo apt-get autoremove -y
 sudo apt-get install git -y
 
