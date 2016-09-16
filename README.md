@@ -9,7 +9,7 @@ Automate everything!!!
 
 #Getting ready:
 
-1. Prepare RPi sd card with PiBaker to at least let you ssh into your Pi from home network
+1. Prepare RPi sd card with PiBaker to at least let you ssh into your Pi from home network. You can setup some more automation with it. (Ideas are welcome)
 
 2. Run code:
 
