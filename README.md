@@ -18,8 +18,8 @@ sudo apt-get install git -y
 
 Create working folder:
 
-	       sudo mkdir scripts
-	       cd scripts
+	sudo mkdir scripts
+	cd scripts
         sudo git clone https://github.com/CoderFX/RPi-Setup.git
         cd RPi-Setup (???)
         sudo chmod +x start.sh
