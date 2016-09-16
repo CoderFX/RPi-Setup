@@ -13,17 +13,17 @@ Automate everything!!!
 
 2. Run code:
 
-	sudo apt-get update -y && sudo apt-get dist-upgrade -y && sudo apt-get autoremove -y
-	sudo apt-get install git -y
+		sudo apt-get update -y && sudo apt-get dist-upgrade -y && sudo apt-get autoremove -y
+		sudo apt-get install git -y
 
 
 3. Create working folder:
 
-	sudo mkdir scripts
-	cd scripts
-	sudo git clone https://github.com/CoderFX/RPi-Setup.git
-	cd RPi-Setup (???)
-	sudo chmod +x start.sh
-	sudo ./start.sh
+		sudo mkdir scripts
+		cd scripts
+		sudo git clone https://github.com/CoderFX/RPi-Setup.git
+		cd RPi-Setup (???)
+		sudo chmod +x start.sh
+		sudo ./start.sh
 
 #Feel free to contribute!
