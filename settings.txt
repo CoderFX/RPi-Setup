@@ -1,0 +1,5 @@
+#Line 2: Wifi name
+RPi-Wifi
+#Line 4: Wifi password
+abcd1234
+#Line 6: 
