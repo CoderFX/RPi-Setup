@@ -1,6 +1,6 @@
 #!/bin/bash
 
 #Turn the folder into executable
-cd ..
+echo -e 'Starting Raspbery Pi Setup'
 sudo chmod +x -R /home/pi/scripts/RPi-Setup
-sudo ./menu.sh
+sudo ./home/pi/scripts/RPi-Setup/menu.sh
