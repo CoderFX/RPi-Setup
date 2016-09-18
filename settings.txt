@@ -2,4 +2,5 @@
 RPi-Wifi
 #Line 4: Wifi password
 abcd1234
-#Line 6: 
+#Line 6: User 'pi' password
+raspberry

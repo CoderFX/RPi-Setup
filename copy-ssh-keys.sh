@@ -8,7 +8,7 @@
 
 cd ~
 #Make sure ssh keys are installed
-install -d -m 700 ~/.ssh
-mkdir -p ~/.ssh
+sudo install -d -m 700 ~/.ssh
+sudo mkdir -p ~/.ssh
 sudo cp /mnt/usb/authorized_keys ~/.ssh/authorized_keys
 sudo chmod 600 ~/.ssh/authorized_keys

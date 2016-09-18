@@ -8,10 +8,11 @@ echo -e 'Creating RSA 4096 bit SSH keys for RPi. I suggest you save it in the de
 ssh-keygen -b 4096 -t rsa -C pi@raspberry
 
 #Add new public key to authorized_keys
-echo -e 'Moving keys to USB storage'
+echo -e 'Copying new public key to authorized_keys'
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 
 #Move public key to USB
+echo -e 'Moving keys to USB storage'
 sudo mv ~/.ssh/id_rsa.pub /mnt/usb/id_rsa.pub
 
 #Move private key to USB. You will need this later to login to RPi
