@@ -163,7 +163,7 @@ do
   elif nocase "$opt" "999"
   then
     sudo nano /etc/ssh/sshd_config
-    <find line and change it to "PermitRootLogin no"> <TBD>
+  #<find line and change it to "PermitRootLogin no"> <TBD>
 
   elif nocase "$opt" "Q"
   then

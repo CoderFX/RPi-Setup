@@ -30,7 +30,7 @@ All user-defined settings will be read from /mnt/usb/settings.txt
 		sudo mkdir scripts
 		cd scripts
 		sudo git clone https://github.com/CoderFX/RPi-Setup.git
-		cd RPi-Setup (???)
+		cd RPi-Setup
 		sudo chmod +x start.sh
 		sudo ./start.sh
 
