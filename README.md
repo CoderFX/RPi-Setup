@@ -11,7 +11,9 @@ Automate everything!!!
 
 1. Prepare RPi sd card with PiBaker to at least let you ssh into your Pi from home network. You can setup some more automation with it. (Ideas are welcome)
 
-2. Copy settings.txt to USB storage and change it to your settings
+2. Copy settings.txt to USB storage and change it to your settings. I named my USB "PI_SETTINGS" and formated to FAT32
+
+All user-defined settings will be read from /mnt/usb/settings.txt
 
 3. Start RPi and SSH into it
 
