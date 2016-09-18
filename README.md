@@ -20,6 +20,8 @@ All user-defined settings will be read from /mnt/usb/settings.txt
 4. Run code:
 
 		sudo apt-get update -y && sudo apt-get dist-upgrade -y && sudo apt-get autoremove -y
+
+		Rasbian should have git already installed so this one is optional:
 		sudo apt-get install git -y
 
 
